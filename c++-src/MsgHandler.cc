@@ -9,6 +9,7 @@
 
 #include "ym/MsgHandler.h"
 #include "ym/StreamMsgHandler.h"
+#include "MsgMgrImpl.h"
 
 
 BEGIN_NAMESPACE_YM
@@ -56,7 +57,7 @@ MsgHandler::event_proc(const char* src_file,
 //////////////////////////////////////////////////////////////////////
 
 // @brief コンストラクタ
-StreamMsgHandler::StreamMsgHandler(ostream& streame) :
+StreamMsgHandler::StreamMsgHandler(ostream& stream) :
   mStream{stream}
 {
 }
